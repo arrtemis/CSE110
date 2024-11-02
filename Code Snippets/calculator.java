@@ -57,6 +57,7 @@ public class calculator{
                         System.out.println("sin = " + result);
                     }
                 }
+                //to-do: add this
                 if(b > a && b > c){}
                 if(c > a && c > b){}
                 break;
