@@ -5,7 +5,7 @@ public class calculator{
     public static void main(String args[]){
         Scanner keypad = new Scanner(System.in);
 
-        int a, b, c, temp;
+        int a, b, c;
         double result;
         String prompt;
 
