@@ -1,16 +1,16 @@
 public class lab_assignments{
   public static void main(String[] args){
-    int hungry;
-    int 2AB;
-    int 312.2;
-    int MOBILE;
-    int "Ans";
-    int $30;
-    int Yes/No;
-    int student-id;
-    int A+3;
-    int 'X';
-    int return;
+    int hungry; //valid
+    int 2AB; //invalid
+    int 312.2; //invalid
+    int MOBILE; //invalid
+    int "Ans"; //invalid
+    int $30; //valid
+    int Yes/No; //invalid
+    int student-id; //invalid
+    int A+3; //invalid
+    int 'X'; //invalid
+    int return; //invalid
   }
 }
 
