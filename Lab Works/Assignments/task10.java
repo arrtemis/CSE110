@@ -1,4 +1,4 @@
-public class lab_assignments{
+public class task10{
   public static void main(String[] args){
     int hungry; //valid
     int 2AB; //invalid
