@@ -30,7 +30,7 @@ public class task11 {
         //2.6
         String str1 = "cse110", str2 = " is fun";
         String addition_str = str1 + str2; //"cse110" + "is fun" = "cse110 is fun"
-        System.out.println("Addition of strings = " + sum_str + "\nAddition of an int and string = invalid");
+        System.out.println("Addition of strings = " + addition_str + "\nAddition of an int and string = invalid");
         //the addition operator joins two string together.
         
         //if the first variable was an int and the second variable was a string and vice versa then the addition would still be valid, e.g:
