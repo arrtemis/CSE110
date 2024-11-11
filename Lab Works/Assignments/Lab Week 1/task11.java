@@ -35,6 +35,10 @@ public class task11 {
         
         //if the first variable was an int and the second variable was a string and vice versa then the addition would still be valid, e.g:
         System.out.println(num1 + str1);
+        System.out.println(str1 + num1);
 
+        //however the sum can only be stored in varible type String, e.g:
+        String add_num_str = num1 + str1;
+        System.out.println("addition of num1 and str1 = " + add_num_str);
     }
 }
