@@ -7,7 +7,7 @@ public class task3 {
         * no}
         */
         Scanner sc = new Scanner(System.in);
-        System.out.println("please give a number: ");
+        System.out.print("please give a number: ");
         int number = sc.nextInt();
 
         int divisible = 0;
@@ -29,5 +29,6 @@ public class task3 {
         }else{
             System.out.println("No");
         }
+        sc.close();
     }
 }
