@@ -17,5 +17,7 @@ public class task5 {
         }else{
             System.out.println("Number is zero");
         }
+
+        sc.close();
     }
 }

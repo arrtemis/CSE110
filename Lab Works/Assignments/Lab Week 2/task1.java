@@ -17,5 +17,6 @@ public class task1 {
         }else{
             System.out.println(c);
         }
+        sc.close();
     }
 }
