@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class reverse {
     public static void main(String[] args) {
         int num1 = 123;
@@ -13,5 +15,17 @@ public class reverse {
         int y = (num2 / 10) % 10;
         int z = num2 % 10;
         System.out.println(z + "" + y + "" + x);
+
+        //using loops, any number works
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter a number: ");
+        int num4 = sc.nextInt();
+        int rev_loop = 0;
+        while(num4 != 0){
+            rev_loop = rev_loop*10 + num4 % 10;
+            num4 /= 10;
+        }
+        sc.close();
+        System.out.println(rev_loop);
     }
 }
