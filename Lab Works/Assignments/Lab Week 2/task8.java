@@ -22,6 +22,6 @@ public class task8 {
         }else{
             System.out.println("Your tax amount is " + tax + " Tk");
         }
-
+        sc.close();
     }
 }
