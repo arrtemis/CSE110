@@ -16,5 +16,6 @@ public class quadratics{
         }else{
             System.out.println("The polynomial has two imaginary roots");
         }
+        sc.close();
     }
 }

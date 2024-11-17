@@ -16,6 +16,6 @@ public class quiz2 {
             }
         }
         System.out.println("Total price is: " + price);
-
+        sc.close();
     }
 }
