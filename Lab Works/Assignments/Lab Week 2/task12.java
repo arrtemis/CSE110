@@ -16,5 +16,6 @@ public class task12 {
         }else{
             System.out.println("Neither all are equal or different");
         }
+        sc.close();
     }
 }
