@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class task9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double a, b, c, max = 0, min = 0;
+        double a, b, c, max, min;
         System.out.println("Please enter 3 numbers");
         a = sc.nextDouble();
         b = sc.nextDouble();
