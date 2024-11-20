@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "mid_q3",
+            "request": "launch",
+            "mainClass": "mid_q3",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "mid_q2",
             "request": "launch",
             "mainClass": "mid_q2",
