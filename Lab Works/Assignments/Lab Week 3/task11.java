@@ -13,5 +13,7 @@ public class task11 {
         }
         
         System.out.println("Total digits = " + count);
+
+        sc.close();
     }
 }
