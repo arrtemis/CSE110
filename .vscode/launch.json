@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "binary_to_decimal",
+            "request": "launch",
+            "mainClass": "binary_to_decimal",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "collatz",
+            "request": "launch",
+            "mainClass": "collatz",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "problem_6",
+            "request": "launch",
+            "mainClass": "problem_6",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "ap_series",
+            "request": "launch",
+            "mainClass": "ap_series",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "odd_digits",
+            "request": "launch",
+            "mainClass": "odd_digits",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "mileage",
+            "request": "launch",
+            "mainClass": "mileage",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "fibonacci",
+            "request": "launch",
+            "mainClass": "fibonacci",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "palindromes",
+            "request": "launch",
+            "mainClass": "palindromes",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "mid_q3",
             "request": "launch",
             "mainClass": "mid_q3",
