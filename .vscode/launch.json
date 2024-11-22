@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "dhuro",
+            "request": "launch",
+            "mainClass": "dhuro",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "Trace3",
+            "request": "launch",
+            "mainClass": "Trace3",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "Task20",
+            "request": "launch",
+            "mainClass": "Task20",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "HUH",
+            "request": "launch",
+            "mainClass": "HUH",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "task_tracing1",
+            "request": "launch",
+            "mainClass": "task_tracing1",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "binary_to_decimal",
             "request": "launch",
             "mainClass": "binary_to_decimal",
