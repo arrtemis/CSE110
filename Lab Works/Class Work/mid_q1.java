@@ -1,33 +1,33 @@
-public class mid_q1{
+public class mid_q1 {
     public static void main(String[] args) {
-        int id = 24364589, digits, sum = 0;
-        double price_1 = 80.0, price_2 = 60.0, price_3 = 20.0, discount;
-        double discounted_price = 0.0;
-        String item_1 = "burger", item_2 = "sandwich", item_3 = "water";
+        int n = 15498934, m = n, power = 1, digits, ao = n, ao_digits, sum_digits, count = 0;
 
-        while(id != 0){
-            digits = id % 10;
-            sum += digits * digits;
-            id /= 10;
-        }
-        discount = (sum % 100) / 100.0;
-        System.out.println("Discount = " + discount);
-        if(price_1 > price_2){
-            if(price_1 > price_3){
-                System.out.println(item_1 + " is the item with the highest price " + price_1 + " taka");
-                discounted_price = price_1 * (1 - discount) + price_2 + price_3;
+        while(n / 10 != 0){
+            digits = n % 100;
+            sum_digits = digits / 10 + digits % 10; 
+            if(sum_digits >= 10){
+                sum_digits %= 10;
             }
-        }else{
-            if(price_2 > price_3){
-                System.out.println(item_2 + " is the item with the highest price " + price_2 + " taka");
-                discounted_price = price_1 + price_2 * (1 - discount) + price_3;
-            }else{
-                System.out.println(item_3 + " is the item with the highest price " + price_3 + " taka");
-                discounted_price = price_1 + price_2 + price_3 * (1 - discount);
-            }
+            n = (n/100) * 10 + sum_digits;
         }
-        System.out.println("Amount before discount: " + (price_1+price_2+price_3) + " taka");
-        System.out.println("Amount after discount: " + discounted_price + " taka");
+        System.out.println("checksum: " + n);
+
+        while(m != 0){
+            count++;
+            m /= 10;
+        }
+        for(int i = 2; i <= count; i++){
+            power *= 10;
+        }
+        while(ao != 0){
+            ao_digits = ao / power;
+            if(ao_digits % 2 == 0 && n % 2 == 0){
+                System.out.print(ao_digits + " ");
+            }else if(ao_digits % 2 == 1 && n % 2 == 1){
+                System.out.print(ao_digits + " ");
+            }
+            ao %= power;
+            power /= 10;
+        }
     }
-    
 }

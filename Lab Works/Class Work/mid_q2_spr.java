@@ -1,4 +1,4 @@
-public class mid_q2 {
+public class mid_q2_spr {
     public static void main(String[] args) {
         int price = 300, qty = 10;
         if(price < 0 || qty < 0){

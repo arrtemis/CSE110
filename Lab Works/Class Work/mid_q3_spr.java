@@ -1,4 +1,4 @@
-public class mid_q3 {
+public class mid_q3_spr {
     public static void main(String[] args) {
         int n1 = 161, n2 = 49, n3 = 21;
         while(! ((n1 == n2) && (n2 == n3))){
