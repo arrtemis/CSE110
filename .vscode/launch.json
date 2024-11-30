@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "calculator",
+            "request": "launch",
+            "mainClass": "calculator",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "Trace2",
             "request": "launch",
             "mainClass": "Trace2",
