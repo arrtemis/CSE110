@@ -8,7 +8,7 @@ public class calculator{
         Scanner keypad = new Scanner(System.in);
 
         //the variables
-        double factorial = 1, angle_rad, angle_degree, sum = 0.0, result = 0.0, a = 0.0, b = 0.0;
+        double factorial = 1, angle_rad, angle_degree, result = 0.0, a = 0.0, b = 0.0;
         String prompt, operator = null;
         System.out.println("more modes are WIP if uni doesn't kill me, but for now, algebra or trigonometry?: ");
         prompt = keypad.nextLine();
@@ -34,22 +34,42 @@ public class calculator{
         switch (operator) {
             case "+":
                 result = a + b;
+                System.out.println("\n= " + (float)result);
                 break;
             case "-":
                 result = a - b;
+                System.out.println("\n= " + (float)result);
                 break;
             case "*":
                 result = a * b;
+                System.out.println("\n= " + (float)result);
                 break;
             case "/":
                 result = a / b;
+                System.out.println("\n= " + (float)result);
                 break;
             case "^":
                 result = Math.pow(a, b);
+                System.out.println("\n= " + (float)result);
                 break;
             case "%":
                 result = a % b;
                 System.out.println("The remainder is " + (float)result + " when " + a + " is divided by " + b);
+                break;
+            case "!":
+                a = (int)a;
+                b = (int)b;
+                System.out.println("Calculating factorial of " + a + " and " + b + " as only integers' factorial can be computed");
+                for(int i = 1; i <= a; i++){
+                    factorial *= i; 
+                }
+                System.out.println("factorial of " + a + " = " + (float)factorial);
+
+                factorial = 1;
+                for(int i = 1; i <= b; i++){
+                    factorial *= i;
+                }
+                System.out.println("factorial of " + b + " = " + (float)factorial);
                 break;
             case "sin":
                 System.out.println("angle(in degrees): ");
@@ -80,8 +100,6 @@ public class calculator{
                 System.out.println("Sorry the calculator has not yet been programmed to perform this operation :(");
                 break;
         }
-
-        System.out.println("\n= " + (float)result);
 
         keypad.close();
     }
