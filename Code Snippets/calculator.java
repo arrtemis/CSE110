@@ -1,4 +1,3 @@
-import java.lang.Math;
 import java.util.Scanner;
 
 public class calculator{
@@ -24,7 +23,7 @@ public class calculator{
             System.out.println("Now enter the operators(+ - * / ^ % !): ");
             operator = keypad.nextLine();
 
-        }else if(prompt.equalsIgnoreCase("trigonometry")){ //trig mode
+        }else if(prompt.contains("trig")){ //trig mode
             System.out.print("sin cos tan\n=>");
             operator = keypad.nextLine();
         }else{
