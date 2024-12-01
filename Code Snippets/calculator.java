@@ -9,6 +9,7 @@ public class calculator{
 
         //the variables
         double factorial = 1, angle_rad, angle_degree, result = 0.0, a = 0.0, b = 0.0;
+        int fact = 1;
         String prompt, operator = null;
         System.out.println("more modes are WIP if uni doesn't kill me, but for now, algebra or trigonometry?: ");
         prompt = keypad.nextLine();
@@ -85,16 +86,70 @@ public class calculator{
                     for(int j = 1; j <= 2*n + 1; j++){
                         factorial *= j;
                     }
-                    if(n % 2 == 0){
-                        result += (Math.pow(angle_rad, 2*n + 1) / factorial);
-                    }else{
-                        result -= (Math.pow(angle_rad, 2*n + 1) / factorial);
-                    }
+                    result += fact * (Math.pow(angle_rad, 2*n + 1) / factorial);
+                    fact *= -1;
                 }
+
+                System.out.println("\n= " + (float)result);
                 break;
             case "cos":
+                fact = 1;
+                System.out.println("angle(in degrees): ");
+                angle_degree = keypad.nextDouble();
+
+                if(angle_degree > 360 || angle_degree < -360){
+                    angle_degree %= 360;
+                }
+
+                angle_rad = Math.toRadians(angle_degree);
+                for(int n = 0; n <= 100; n++){    
+                    factorial = 1;
+                    for(int j = 1; j <= 2*n; j++){
+                        factorial *= j;
+                    }
+                    result += fact * (Math.pow(angle_rad, 2*n) / factorial);
+                    fact *= -1;
+                }
+
+                System.out.println("\n= " + (float)result);
                 break;
             case "tan":
+                System.out.println("angle(in degrees): ");
+                angle_degree = keypad.nextDouble();
+                fact = 1;
+
+                if(angle_degree > 90 || angle_degree < -90){
+                    angle_degree %= 360;
+                }
+                if(angle_degree == 90 || angle_degree == -90){
+                    System.out.println("sorry that's an asymptote of the tan graph");
+                    break;
+                }
+
+                angle_rad = Math.toRadians(angle_degree);
+                //sin part
+                double sin = 0;
+                for(int n = 0; n <= 100; n++){    
+                    factorial = 1;
+                    for(int j = 1; j <= 2*n + 1; j++){
+                        factorial *= j;
+                    }
+                    sin += fact * (Math.pow(angle_rad, 2*n + 1) / factorial);
+                    fact *= -1;
+                }
+                //cos part
+                double cos = 0;
+                fact = 1;
+                for(int n = 0; n <= 100; n++){    
+                    factorial = 1;
+                    for(int j = 1; j <= 2*n; j++){
+                        factorial *= j;
+                    }
+                    cos += fact * (Math.pow(angle_rad, 2*n) / factorial);
+                    fact *= -1;
+                }
+                result = sin/cos;
+                System.out.println("\n= " + (float)result);
                 break;
             default:
                 System.out.println("Sorry the calculator has not yet been programmed to perform this operation :(");
