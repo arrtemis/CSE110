@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "nested_for_loop",
+            "request": "launch",
+            "mainClass": "nested_for_loop",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "_14_15q1",
+            "request": "launch",
+            "mainClass": "_14_15q1",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "calculator",
             "request": "launch",
             "mainClass": "calculator",
