@@ -5,6 +5,7 @@ public class task6{
     Scanner sc = new Scanner(System.in);
     System.out.println("n = ?");
     int n = sc.nextInt(), sum = 0;
+
     for(int i = 1; i <= n; i++){
       if(i % 2 == 1){
         sum += i*i;
@@ -12,7 +13,9 @@ public class task6{
         sum -= i*i;
       }
     }
+
     System.out.println(sum);
+    
     sc.close();
   }
 }

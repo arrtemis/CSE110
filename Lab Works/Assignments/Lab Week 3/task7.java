@@ -5,14 +5,17 @@ public class task7{
     Scanner sc = new Scanner(System.in);
     System.out.println("Please give a number: ");
     int num1 = sc.nextInt();
+    int divisors = 0;
 
     System.out.println("Divisors of " + num1 + ": ");
 
     for(int i = 1; i <= num1; i++){
       if(num1 % i == 0){
         System.out.println(i);
+        divisors++;
       }
     }
+    System.out.println("Total divisors: " + divisors);
     sc.close();
   }
 }
