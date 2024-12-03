@@ -68,6 +68,34 @@ public class nested_for_loop{
             System.out.println();
         }  
 
+        //pascal's triangle
+        int element;
+        System.out.println("\nPascal's Triangle");
+        for(int i = 1; i <= rows; i++){
+            if(rows <= 4){
+                for(int j = rows; j > i; j--){
+                    System.out.print(" ");
+                }
+                element = 1;
+                System.out.print(element + " ");
+                for(int j = 1; j < i; j++){
+                    element *= i - j;
+                    element /= j;
+                    System.out.print(element + " ");
+                }
+                System.out.println();
+            }else{
+                element = 1;
+                System.out.print(element + " ");
+                for(int j = 1; j < i; j++){
+                    element *= i - j;
+                    element /= j;
+                    System.out.print(element + " ");
+                }
+                System.out.println();
+            }
+            
+        }
         sc.close();
     }
 }

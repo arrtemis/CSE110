@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pascal_triangle",
+            "request": "launch",
+            "mainClass": "pascal_triangle",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "nested_for_loop",
             "request": "launch",
             "mainClass": "nested_for_loop",
