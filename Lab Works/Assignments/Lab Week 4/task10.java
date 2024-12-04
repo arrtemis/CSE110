@@ -5,13 +5,15 @@ public class task10 {
         Scanner sc = new Scanner(System.in);
         int rows = sc.nextInt();
         for(int i = 1; i <= rows; i++){
-            for(int spaces = rows; spaces > i; spaces--){
-                System.out.print(" ");
-            }
-            for(int j = 1; j < i*2; j++){
-                System.out.print(j);
-            }
+            if(i % 2 == 1){
+                for(int spaces = rows; spaces > i; spaces--){
+                    System.out.print(" ");
+                }
+                for(int j = 1; j <= i; j++){
+                    System.out.print(j + " ");
+                }
             System.out.println();
+            }
         }
         sc.close();
     }
