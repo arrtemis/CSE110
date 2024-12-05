@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "T4",
+            "request": "launch",
+            "mainClass": "T4",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "T3",
+            "request": "launch",
+            "mainClass": "T3",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "T1",
+            "request": "launch",
+            "mainClass": "T1",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "pascal_triangle",
             "request": "launch",
             "mainClass": "pascal_triangle",
