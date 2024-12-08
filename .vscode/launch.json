@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "t1",
+            "request": "launch",
+            "mainClass": "t1",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "T4",
             "request": "launch",
             "mainClass": "T4",

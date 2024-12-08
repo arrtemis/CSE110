@@ -13,9 +13,9 @@ public class nested_for_loop{
 
         System.out.println("\nTriangle");
         //triangle (rhs)
-        for(int i = 1; i <= rows; i++){
-            for(int j = 1; j <= i; j++){
-                System.out.print(symbol);
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j <= i; j++){
+                System.out.print(symbol + " ");
             }
             System.out.println();
         }
@@ -37,8 +37,8 @@ public class nested_for_loop{
             }
             System.out.println();
         }
-        for(int i = 2; i <= rows; i++){
-            for(int j = rows; j >= i; j--){
+        for(int i = 1; i <= rows-1; i++){
+            for(int j = rows-1; j >= i; j--){
                 System.out.print(symbol);
             }
             System.out.println();
@@ -46,11 +46,11 @@ public class nested_for_loop{
 
         System.out.println("\nLeftie triangle");
         //triangle(Lhs)
-        for(int i = 0; i <= rows; i++){
+        for(int i = 0; i < rows; i++){
             for(int j = rows; j > i; j--){
                 System.out.print(" ");
             }
-            for(int k = 1; k <= i; k++){
+            for(int k = 0; k <= i; k++){
                 System.out.print(symbol);
             }
             System.out.println();
