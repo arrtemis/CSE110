@@ -14,10 +14,8 @@ public class task11 {
                 System.out.print(" ");
             }
             for(int j = 0; j <= i; j++){
-                if(i <= 1 ||  i == rows-1){
+                if(i <= 1 ||  i == rows-1 || j == 0 || j == rows-1 || j == i){
                     System.out.print(symbol+" ");
-                }else if(j == 0 || j == rows-1 || j == i){
-                    System.out.print(symbol + " ");
                 }else{
                     System.out.print("  ");
                 }
