@@ -9,8 +9,10 @@ public class task7 {
 
         for(int i = 1; i <= N; i++){
             sum = 0;
+            
             X = sc.nextInt();
             Y = sc.nextInt();
+
             if(X % 2 == 0){
                 a = ++X;
             }else{
