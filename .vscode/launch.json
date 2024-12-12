@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HWTracing02",
+            "request": "launch",
+            "mainClass": "HWTracing02",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "HWTracing01",
+            "request": "launch",
+            "mainClass": "HWTracing01",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "task7_alt",
+            "request": "launch",
+            "mainClass": "task7_alt",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
+            "name": "tracing1_lab4",
+            "request": "launch",
+            "mainClass": "tracing1_lab4",
+            "projectName": "CSE110_a2d32567"
+        },
+        {
+            "type": "java",
             "name": "t1",
             "request": "launch",
             "mainClass": "t1",

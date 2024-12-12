@@ -7,15 +7,13 @@ public class task10 {
         int rows = sc.nextInt();
         
         for(int i = 1; i <= rows; i++){
-            if(i % 2 == 1){
-                for(int spaces = rows; spaces > i; spaces--){
-                    System.out.print(" ");
-                }
-                for(int numbers = 1; numbers <= i; numbers++){
-                    System.out.print(numbers + " ");
-                }
-            System.out.println();
+            for(int spaces = rows*2 - 1; spaces > i*2 - 1; spaces--){
+                System.out.print(" ");
             }
+            for(int numbers = 1; numbers <= i*2 - 1; numbers++){
+                System.out.print(numbers + " ");
+            }
+        System.out.println();
         }
         sc.close();
     }
